@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibha Manomai — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV — styled like editor tabs ================= -->
+<header class="tabbar">
+  <div class="tabbar-inner">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span>~/portfolio</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <a href="#about" class="tab active" data-target="about">About</a>
+      <a href="#skills" class="tab" data-target="skills">Skills</a>
+      <a href="#projects" class="tab" data-target="projects">Achievements</a>
+      <a href="#resume" class="tab" data-target="resume">Resume</a>
+      <a href="#contact" class="tab" data-target="contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO — boot sequence terminal ================= -->
+  <section class="hero">
+    <div class="terminal" role="img" aria-label="Terminal boot sequence introducing Vibha Manomai Posannapeta, AI and ML student">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">guest@portfolio: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p><span class="prompt">guest@portfolio</span><span class="path">:~$</span> <span id="typedLine"></span><span class="cursor">▌</span></p>
+        <div id="bootOutput" class="boot-output"></div>
+      </div>
+    </div>
+
+    <h1 class="hero-name">Vibha Manomai </h1>
+    <p class="hero-role">AI/ML Student &mdash; <span class="accent">Turning ideas into intelligent solutions.</span></p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View achievements</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="section-tag">// 01</span>
+      <h2>About</h2>
+    </div>
+    <div class="code-card">
+      <pre class="code-block"><span class="kw"></span> <span class="var">Vibha</span> 
+  <span class="key">Status</span>: <span class="str">"1st year, B.Tech CSE (AI & ML), BVRIT Hyderabad College of Engineering for Women"</span>
+  <span class="key">CGPA</span>: <span class="str">"9.40"</span>
+  <span class="key">Interests</span>: [<span class="str">"Generative AI"</span>, <span class="str">"Prompt Engineering"</span>, <span class="str">"DSA"</span>, <span class="str">"Web Dev"</span>],
+  <span class="key">Participation</span>: <span class="str">"GSSoC'26 Contributor — AI/Agents Track"</span>,
+  <span class="key">Bio</span>: <span class="str">"I'm an AI/ML student who likes turning ideas into
+  intelligent, working solutions. I've competed at national-level
+  hackathons like IIT Kharagpur's COMPOSIT Ideathon and CBIT's
+  SUDHEE 2026, and I'm currently contributing to open source
+  through GirlScript Summer of Code. When I'm not building or
+  debugging, you'll find me at a chessboard or practicing Kathak."</span>,
+};</pre>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="section-tag">// 02</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="pill-list">
+          <li class="pill">C</li>
+          <li class="pill">Python</li>
+          <li class="pill">HTML</li>
+          <li class="pill">CSS</li>
+          <li class="pill">JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>AI / ML</h3>
+        <ul class="pill-list">
+          <li class="pill">Generative AI</li>
+          <li class="pill">LLMs</li>
+          <li class="pill">Prompt Engineering</li>
+          <li class="pill">Claude AI</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Other</h3>
+        <ul class="pill-list">
+          <li class="pill pill-outline">Git &amp; GitHub</li>
+          <li class="pill pill-outline">DSA</li>
+          <li class="pill pill-outline">Problem Solving</li>
+          <li class="pill pill-outline">Web Development</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-tag">// 03</span>
+      <h2>Achievements</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="folder-icon">📁</span>
+          <h3>gssoc-2026</h3>
+        </div>
+        <p class="project-desc">Selected as a Contributor on the AI/Agents Track for GirlScript Summer of Code 2026, chosen out of thousands of applicants nationwide.</p>
+        <ul class="tag-list">
+          <li>Open Source</li><li>AI Agents</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="folder-icon">📁</span>
+          <h3>composit-ideathon</h3>
+        </div>
+        <p class="project-desc">Qualified for the offline round of the 31st COMPOSIT Ideathon at IIT Kharagpur — as a first-year student team.</p>
+        <ul class="tag-list">
+          <li>Ideathon</li><li>IIT Kharagpur</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="folder-icon">📁</span>
+          <h3>sudhee-2026</h3>
+        </div>
+        <p class="project-desc">Selected among the top teams from 220+ colleges at CBIT's national-level hackathon; built and presented a solution before a panel of judges.</p>
+        <ul class="tag-list">
+          <li>Hackathon</li><li>Team Presentation</li>
+        </ul>
+      </article>
+
+      <!-- TODO: add real coding projects here as you build them, e.g.:
+      <article class="project-card">
+        <div class="project-top">
+          <span class="folder-icon">📁</span>
+          <h3>project-name</h3>
+        </div>
+        <p class="project-desc">Short description of what it does and why you built it.</p>
+        <ul class="tag-list">
+          <li>Tech</li><li>Tech</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="link-btn">Live demo →</a>
+          <a href="#" class="link-btn">Source →</a>
+        </div>
+      </article>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume" class="section">
+    <div class="section-head">
+      <span class="section-tag">// 04</span>
+      <h2>Resume</h2>
+    </div>
+    <div class="resume-card">
+      <p>Want the full breakdown — coursework, experience, and everything else that doesn't fit in a project card?</p>
+      <div class="resume-actions">
+        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+          <code>View Resume</code>
+        </a>
+        <a href="resume.pdf" download class="btn btn-primary">
+          <code>Download Resume</code>
+        </a>
+      </div>
+      <p class="resume-note">↳ CGPA 9.40 · B.Tech CSE (AI &amp; ML), BVRIT Hyderabad</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <span class="section-tag">// 05</span>
+      <h2>Contact</h2>
+    </div>
+
+    <div class="terminal contact-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">Contact details</span>
+      </div>
+      <div class="terminal-body">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="What's up?" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="social-row">
+      <a href="https://github.com/VIBHA-2612" target="_blank" rel="noopener" class="social-link">GitHub</a>
+      <a href="https://linkedin.com/in/vibhamanomai" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+      <a href="mailto:25wh1a66c4@bvrithyderabad.edu.in" class="social-link">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar">
+  <span class="status-item">● online</span>
+  <span class="status-item">UTF-8</span>
+  <span class="status-item">Ln 1, Col 1</span>
+  <span class="status-item status-right">© <span id="year"></span> Vibha Manomai Posannapeta — built with HTML, CSS &amp; JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
