@@ -11,17 +11,16 @@
 </head>
 <body>
 
-<!-- ================= NAV — styled like editor tabs ================= -->
+<!-- ================= NAV ================= -->
 <header class="tabbar">
   <div class="tabbar-inner">
-    <div class="brand">
-      <span class="brand-dot"></span>
-      <span>~/portfolio</span>
-    </div>
+    <div class="brand"><span class="brand-dot"></span><span>~/portfolio</span></div>
     <nav class="tabs" id="tabs">
       <a href="#about" class="tab active" data-target="about">About</a>
       <a href="#skills" class="tab" data-target="skills">Skills</a>
+      <a href="#work" class="tab" data-target="work">Projects</a>
       <a href="#projects" class="tab" data-target="projects">Achievements</a>
+      <a href="#certs" class="tab" data-target="certs">Certifications</a>
       <a href="#resume" class="tab" data-target="resume">Resume</a>
       <a href="#contact" class="tab" data-target="contact">Contact</a>
     </nav>
@@ -33,206 +32,252 @@
 
 <main>
 
-  <!-- ================= HERO — boot sequence terminal ================= -->
-  <section class="hero">
-    <div class="terminal" role="img" aria-label="Terminal boot sequence introducing Vibha Manomai Posannapeta, AI and ML student">
-      <div class="terminal-bar">
-        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-        <span class="terminal-title">guest@portfolio: ~</span>
-      </div>
-      <div class="terminal-body" id="terminalBody">
-        <p><span class="prompt">guest@portfolio</span><span class="path">:~$</span> <span id="typedLine"></span><span class="cursor">▌</span></p>
-        <div id="bootOutput" class="boot-output"></div>
-      </div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="terminal" role="img" aria-label="Terminal boot sequence introducing Vibha Manomai Posannapeta, AI and ML student">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">guest@portfolio: ~</span>
     </div>
-
-    <h1 class="hero-name">Vibha Manomai </h1>
-    <p class="hero-role">AI/ML Student &mdash; <span class="accent">Turning ideas into intelligent solutions.</span></p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View achievements</a>
-      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    <div class="terminal-body" id="terminalBody">
+      <p><span class="prompt">guest@portfolio</span><span class="path">:~$</span> <span id="typedLine"></span><span class="cursor">▌</span></p>
+      <div id="bootOutput" class="boot-output"></div>
     </div>
-  </section>
+  </div>
+  <h1 class="hero-name">Vibha Manomai </h1>
+  <p class="hero-role">AI/ML Student &mdash; <span class="accent">Turning ideas into intelligent solutions.</span></p>
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-primary">View projects</a>
+    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  </div>
+</section>
 
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="section">
-    <div class="section-head">
-      <span class="section-tag">// 01</span>
-      <h2>About</h2>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="section-head"><span class="section-tag">// 01</span><h2>About</h2></div>
+  <div class="code-card">
+<pre class="code-block"><span class="key">Status</span>: <span class="str">"B.Tech CSE (AI & ML), 2nd Year — BVRIT Hyderabad College of Engineering for Women"</span>
+<span class="key">CGPA</span>: <span class="str">"9.38"</span>
+<span class="key">Interests</span>: [<span class="str">"Generative AI"</span>, <span class="str">"AI Agents"</span>, <span class="str">"Prompt Engineering"</span>, <span class="str">"Web Dev"</span>, <span class="str">"Open Source"</span>],
+<span class="key">Participation</span>: <span class="str">"GSSoC'26 Contributor — AI/Agents Track"</span>,
+<span class="key">Bio</span>: <span class="str">"I'm an AI & ML engineering student who believes the best
+way to learn is to build. I've built full-stack and front-end
+prototypes (TalentSetu, Vyuha, TAZVI), competed at IIT Kharagpur's
+COMPOSIT Ideathon and SUDHEE 2026 among 220+ national teams, and
+I'm contributing to open source through GirlScript Summer of Code.
+Certified by Google Cloud and Anthropic, with training in
+cybersecurity and entrepreneurship. Off screen, you'll find me at
+a chessboard, on a basketball court, or practicing Kathak."</span>
+
+<span class="key">Education</span>: [
+  <span class="str">"B.Tech CSE (AI & ML) — BVRIT Hyderabad, 2025–Present, CGPA 9.38"</span>,
+  <span class="str">"Intermediate (MPC) — Narayana Junior College, 2023–2025, 96.1%"</span>,
+  <span class="str">"Class X — Prachin Global School, 2022–2023, 89.61%"</span>
+]
+</pre>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="section-head"><span class="section-tag">// 02</span><h2>Skills</h2></div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <ul class="pill-list">
+        <li class="pill">C</li><li class="pill">Python</li><li class="pill">Java</li>
+        <li class="pill">HTML</li><li class="pill">CSS</li><li class="pill">JavaScript</li>
+      </ul>
     </div>
-    <div class="code-card">
-      <pre class="code-block"><span class="kw"></span> <span class="var"></span> 
-  <span class="key">Status</span>: <span class="str">"B.Tech CSE (AI & ML), BVRIT Hyderabad College of Engineering for Women"</span>
-  <span class="key">CGPA</span>: <span class="str">"9.40"</span>
-  <span class="key">Interests</span>: [<span class="str">"Generative AI"</span>, <span class="str">"Prompt Engineering"</span>, <span class="str">"DSA"</span>, <span class="str">"Web Dev"</span>],
-  <span class="key">Participation</span>: <span class="str">"GSSoC'26 Contributor — AI/Agents Track"</span>,
-  <span class="key">Bio</span>: <span class="str">"I'm an AI/ML student who likes turning ideas into
-  intelligent, working solutions. I've competed at national-level
-  hackathons like IIT Kharagpur's COMPOSIT Ideathon and CBIT's
-  SUDHEE 2026, and I'm currently contributing to open source
-  through GirlScript Summer of Code. When I'm not building or
-  debugging, you'll find me at a chessboard or practicing Kathak."</span>
-      </pre>
+    <div class="skill-group">
+      <h3>AI / ML</h3>
+      <ul class="pill-list">
+        <li class="pill">Generative AI</li><li class="pill">LLMs</li><li class="pill">LangChain</li>
+        <li class="pill">Multimodal AI</li><li class="pill">Prompt Engineering</li>
+        <li class="pill">Claude AI</li><li class="pill">AI Agents</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section id="skills" class="section">
-    <div class="section-head">
-      <span class="section-tag">// 02</span>
-      <h2>Skills</h2>
+    <div class="skill-group">
+      <h3>Security</h3>
+      <ul class="pill-list">
+        <li class="pill pill-outline">Cybersecurity Fundamentals</li>
+        <li class="pill pill-outline">Secure System Design</li>
+      </ul>
     </div>
-
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Languages</h3>
-        <ul class="pill-list">
-          <li class="pill">C</li>
-          <li class="pill">Python</li>
-          <li class="pill">HTML</li>
-          <li class="pill">CSS</li>
-          <li class="pill">JavaScript</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>AI / ML</h3>
-        <ul class="pill-list">
-          <li class="pill">Generative AI</li>
-          <li class="pill">LLMs</li>
-          <li class="pill">Prompt Engineering</li>
-          <li class="pill">Claude AI</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Tools &amp; Other</h3>
-        <ul class="pill-list">
-          <li class="pill pill-outline">Git &amp; GitHub</li>
-          <li class="pill pill-outline">DSA</li>
-          <li class="pill pill-outline">Problem Solving</li>
-          <li class="pill pill-outline">Web Development</li>
-        </ul>
-      </div>
+    <div class="skill-group">
+      <h3>Tools &amp; Other</h3>
+      <ul class="pill-list">
+        <li class="pill pill-outline">Git &amp; GitHub</li><li class="pill pill-outline">DSA</li>
+        <li class="pill pill-outline">Problem Solving</li><li class="pill pill-outline">Web Development</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= ACHIEVEMENTS ================= -->
-  <section id="projects" class="section">
-    <div class="section-head">
-      <span class="section-tag">// 03</span>
-      <h2>Achievements</h2>
+<!-- ================= PROJECTS ================= -->
+<section id="work" class="section">
+  <div class="section-head"><span class="section-tag">// 03</span><h2>Projects</h2></div>
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>talentsetu</h3></div>
+      <p class="project-desc">AI-powered inclusive talent platform (SIH / hackathon prototype) connecting India's offline artisans, tailors, tutors and home entrepreneurs to businesses. Node.js/Express backend serving a 9-page front end, with four rule-based AI engines (fair pricing, bio generation, skill matching, translation) behind REST endpoints, each swappable for an LLM call later.</p>
+      <ul class="tag-list"><li>Node.js</li><li>Express</li><li>REST</li><li>JavaScript</li></ul>
+      <div class="project-links"><a href="https://github.com/VIBHA-2612/TalentSetu_project" target="_blank" rel="noopener" class="link-btn">Source →</a></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>vyuha</h3></div>
+      <p class="project-desc">AI skill verification prototype for iGOT Karmayogi (SIH26101). An interactive 8-step flow from SSO login and gap analysis to AI quiz generation, human review and verified skill, built as one responsive, dependency-free page with auto-play demo mode and keyboard navigation.</p>
+      <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <div class="project-links"><a href="https://github.com/VIBHA-2612/VYUHA" target="_blank" rel="noopener" class="link-btn">Source →</a></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>tazvi</h3></div>
+      <p class="project-desc">Startup pitch website (“Chill. Move. Deliver.”). Co-built a 19-page static site generated by a Python build script so every page regenerates from a single content file. Deployable to GitHub Pages / Netlify and works offline.</p>
+      <ul class="tag-list"><li>Python</li><li>HTML/CSS/JS</li><li>GitHub Pages</li></ul>
+      <div class="project-links"><a href="https://github.com/VIBHA-2612/Tazvi-Chill.Move.Deliver" target="_blank" rel="noopener" class="link-btn">Source →</a></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>c-language</h3></div>
+      <p class="project-desc">A public repository of C programs covering loops, functions, arrays, pointers and basic data structures, organised by topic with a written learning record.</p>
+      <ul class="tag-list"><li>C</li><li>DSA</li></ul>
+      <div class="project-links"><a href="https://github.com/VIBHA-2612/C-Language" target="_blank" rel="noopener" class="link-btn">Source →</a></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="projects" class="section">
+  <div class="section-head"><span class="section-tag">// 04</span><h2>Achievements</h2></div>
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>gssoc-2026</h3></div>
+      <p class="project-desc">Selected as a Contributor / Mentee on the Open Source + AI/Agents Track of GirlScript Summer of Code 2026, out of thousands of applicants nationwide. Earned a GirlScript participation certificate and an AI Track certificate (Smartly × GS Labs).</p>
+      <ul class="tag-list"><li>Open Source</li><li>AI Agents</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>composit-ideathon</h3></div>
+      <p class="project-desc">Qualified for the offline round of the 31st COMPOSIT Ideathon at IIT Kharagpur as a first-year student.</p>
+      <ul class="tag-list"><li>Ideathon</li><li>IIT Kharagpur</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>sudhee-2026</h3></div>
+      <p class="project-desc">Competed among 220+ national teams at CBIT's SUDHEE 2026 hackathon; built and presented a solution before a panel of judges as a first-year team.</p>
+      <ul class="tag-list"><li>Hackathon</li><li>Team Presentation</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>turing-cup-2k26</h3></div>
+      <p class="project-desc">Member of team ‘404 Error’ (BVRIT-H) at VNR VJIET's national-level coding contest, tackling DSA-based algorithmic challenges.</p>
+      <ul class="tag-list"><li>DSA</li><li>Coding Contest</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>campus-events</h3></div>
+      <p class="project-desc">Prompt Wars (Engineer's Day 2026), TEDxBVRIT Hyderabad (Feb 2026) and Fusion Fest – Fusion Rounds (Sep 2025), all at BVRIT Hyderabad.</p>
+      <ul class="tag-list"><li>Prompt Engineering</li><li>TEDx</li><li>CSE-AIML</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>earlier-highlights</h3></div>
+      <p class="project-desc">Silver Medal, International Mathematics Olympiad (2015); School Captain (2017–18); First Place, school chess tournament (2022).</p>
+      <ul class="tag-list"><li>Olympiad</li><li>Leadership</li><li>Chess</li></ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certs" class="section">
+  <div class="section-head"><span class="section-tag">// 05</span><h2>Certifications</h2></div>
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>langchain-multimodal-ai</h3></div>
+      <p class="project-desc">Two-day hands-on workshop on building LLM-powered applications with LangChain and working with multimodal AI. BVRIT Hyderabad, Oct 8–9, 2026.</p>
+      <ul class="tag-list"><li>LangChain</li><li>Multimodal AI</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>sdp-startupreneurship</h3></div>
+      <p class="project-desc">15-day SDP Training for Innovators by ALEAP under the RAMP Program (Ministry of MSME, Govt. of India and the World Bank). Sep 21 – Oct 5, 2026.</p>
+      <ul class="tag-list"><li>Entrepreneurship</li><li>ALEAP</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>exploring-cybersecurity</h3></div>
+      <p class="project-desc">IBM, via Adobe Learning Manager (Aug 2026). Core cybersecurity concepts to complement AI/ML work on secure, resilient systems.</p>
+      <ul class="tag-list"><li>Cybersecurity</li><li>IBM</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>lean-startup</h3></div>
+      <p class="project-desc">One-day workshop at IIT Hyderabad on Lean Startup methodology, assumption validation and early-stage frameworks. Aug 8, 2026.</p>
+      <ul class="tag-list"><li>Lean Startup</li><li>IIT Hyderabad</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>claude-101</h3></div>
+      <p class="project-desc">Anthropic's AI Fundamentals course (Mar 2026): Claude capabilities, artifact creation, responsible AI usage, and applications for research and writing.</p>
+      <ul class="tag-list"><li>Claude</li><li>Anthropic</li></ul>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span class="folder-icon">📁</span><h3>intro-generative-ai</h3></div>
+      <p class="project-desc">Simplilearn × Google Cloud (SkillUp), Feb 9, 2026. Foundations of Generative AI, LLMs, and practical tools like ChatGPT and Gemini. Certificate code: 9823927.</p>
+      <ul class="tag-list"><li>Generative AI</li><li>Google Cloud</li></ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section id="resume" class="section">
+  <div class="section-head"><span class="section-tag">// 06</span><h2>Resume</h2></div>
+  <div class="resume-card">
+    <p>Want the full breakdown in one page? Grab the latest resume.</p>
+    <div class="resume-actions">
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost"><code>View Resume</code></a>
+      <a href="resume.pdf" download class="btn btn-primary"><code>Download Resume</code></a>
     </div>
+    <p class="resume-note">↳ CGPA 9.38 · B.Tech CSE (AI &amp; ML), BVRIT Hyderabad</p>
+  </div>
+</section>
 
-    <div class="project-grid">
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="folder-icon">📁</span>
-          <h3>gssoc-2026</h3>
-        </div>
-        <p class="project-desc">Selected as a Contributor on the AI/Agents Track for GirlScript Summer of Code 2026, chosen out of thousands of applicants nationwide.</p>
-        <ul class="tag-list">
-          <li>Open Source</li><li>AI Agents</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="folder-icon">📁</span>
-          <h3>composit-ideathon</h3>
-        </div>
-        <p class="project-desc">Qualified for the offline round of the 31st COMPOSIT Ideathon at IIT Kharagpur — as a first-year student team.</p>
-        <ul class="tag-list">
-          <li>Ideathon</li><li>IIT Kharagpur</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="folder-icon">📁</span>
-          <h3>sudhee-2026</h3>
-        </div>
-        <p class="project-desc">Selected among the top teams from 220+ colleges at CBIT's national-level hackathon; built and presented a solution before a panel of judges.</p>
-        <ul class="tag-list">
-          <li>Hackathon</li><li>Team Presentation</li>
-        </ul>
-      </article>
-
-      <!-- TODO: add real coding projects here as you build them, e.g.:
-      <article class="project-card">
-        <div class="project-top">
-          <span class="folder-icon">📁</span>
-          <h3>project-name</h3>
-        </div>
-        <p class="project-desc">Short description of what it does and why you built it.</p>
-        <ul class="tag-list">
-          <li>Tech</li><li>Tech</li>
-        </ul>
-        <div class="project-links">
-          <a href="#" class="link-btn">Live demo →</a>
-          <a href="#" class="link-btn">Source →</a>
-        </div>
-      </article>
-      -->
-
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="section-head"><span class="section-tag">// 07</span><h2>Contact</h2></div>
+  <div class="terminal contact-terminal">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">Contact details</span>
     </div>
-  </section>
-
-  <!-- ================= RESUME ================= -->
-  <section id="resume" class="section">
-    <div class="section-head">
-      <span class="section-tag">// 04</span>
-      <h2>Resume</h2>
+    <div class="terminal-body">
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="email"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <label for="message"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="What's up?" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
-    <div class="resume-card">
-      <p>Want the full breakdown — coursework, experience, and everything else that doesn't fit in a project card?</p>
-      <div class="resume-actions">
-        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
-          <code>View Resume</code>
-        </a>
-        <a href="resume.pdf" download class="btn btn-primary">
-          <code>Download Resume</code>
-        </a>
-      </div>
-      <p class="resume-note">↳ CGPA 9.40 · B.Tech CSE (AI &amp; ML), BVRIT Hyderabad</p>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="section">
-    <div class="section-head">
-      <span class="section-tag">// 05</span>
-      <h2>Contact</h2>
-    </div>
-
-    <div class="terminal contact-terminal">
-      <div class="terminal-bar">
-        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-        <span class="terminal-title">Contact details</span>
-      </div>
-      <div class="terminal-body">
-        <form id="contactForm" class="contact-form" novalidate>
-          <label for="name"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-
-          <label for="email"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-          <label for="message"><span class="prompt">guest@portfolio</span><span class="path">:~$</span>Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="What's up?" required></textarea>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </div>
-
-    <div class="social-row">
-      <a href="https://github.com/VIBHA-2612" target="_blank" rel="noopener" class="social-link">GitHub</a>
-      <a href="https://linkedin.com/in/vibhamanomai" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
-      <a href="mailto:25wh1a66c4@bvrithyderabad.edu.in" class="social-link">Email</a>
-    </div>
-  </section>
+  </div>
+  <div class="social-row">
+    <a href="https://github.com/VIBHA-2612" target="_blank" rel="noopener" class="social-link">GitHub</a>
+    <a href="https://linkedin.com/in/vibha-manomai" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+    <a href="mailto:25wh1a66c4@bvrithyderabad.edu.in" class="social-link">Email</a>
+  </div>
+</section>
 
 </main>
 
