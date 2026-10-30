@@ -1,4 +1,4 @@
-# Vibha Manomai Posannapeta — Portfolio
+# Vibha Manomai  — Portfolio
 
 Personal portfolio website showcasing my projects, skills, achievements and certifications as a B.Tech CSE (AI & ML) student at BVRIT Hyderabad College of Engineering for Women.
 
